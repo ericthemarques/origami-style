@@ -26,9 +26,6 @@ function App() {
 
   const dados = mario;
   const total = dados.compras.map((i) => Number(i.preco.replace("R$ ", ""))).reduce((a, b) => a + b);
-  const estilo = {
-    color: "Green",
-  };
  
 
   return (
@@ -37,6 +34,7 @@ function App() {
      <p>Idade = {dados.idade}</p>
      <p>Situação = <span style={{color: dados.ativa ? "green" : "red"}}>{dados.ativa ? "Ativo" : "Inativo"}</span></p>
      <p>Total = {total}</p>
+     <p>{total > 10000 ? "Tu tá gastando muito bro" : ""}</p>
     </>
   )
 }

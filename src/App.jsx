@@ -6,11 +6,10 @@ import ListaProds from "./Aulas/Exerciciodois";
 function App() {
   return (
     <>
-    {/* <Exercicioum/>
-    <Arrayzada/> */}
-    <ListaProds/>
+    <button onClick={(event) => console.log(event)}>click</button> 
     </>
   )
 }
+// Função simples para eventos simples
 
 export default App
